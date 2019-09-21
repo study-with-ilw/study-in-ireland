@@ -238,15 +238,15 @@
 				<li class="clearfix">
 					<a href="javascript:void(0)" class="closebtn" data-dismiss="modal" aria-label="Close">Close <i class="fa fa-times" aria-hidden="true"></i></a>
 				</li>
-				<li class="cont-btn"><a href="/contact-us/">Contact Us</a></li>
+				<li class="cont-btn"><a href="/contact-us">Contact Us</a></li>
 
 				<li><a href="/course-search/">Course Search</a></li>
 				<li><a href="/services/">Application Services</a></li>
 				<li><a href="/ireland-study-info/">Ireland Study Info</a></li>
-				<li><a href="/profiles/">University Profiles</a></li>
+				<li><a href="/universities/">University Profiles</a></li>
 				<li><a href="/subjects/">University Subjects</a></li>
 				<li><a href="/study-options/">Study Options </a></li>
-				<li><a href="/study-guide/">Study Guide </a></li>
+				<li><a href="/blog/">Blog</a></li>
 				<li>
 					<a href="#Menu" data-toggle="collapse" data-parent="#accordion">News and Events
 						<div class="pull-right"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
@@ -305,12 +305,14 @@
 				</div>
 			</div>
 		</header>
+		
+		<!-- Banner area -->
 		<figure class="banner">
 			<section>
 			  	<ul class="list-group list-group-flush" >
 			    	<li sy-active>
 			            <a class="d-none d-sm-block" href="#" >
-			              <img alt="ABC" src="assets/banner/main-banner11.jpg" class="img-fluid">
+			              <img alt="ABC" src="assets/images/landing-page.jpg" class="img-fluid">
 			            </a>
 			            <a class="d-block d-sm-none" href="/search/" >
 			              <img alt="ABC" src="assets/banner/main-banner-mb.jpg" class="img-fluid">
@@ -336,7 +338,7 @@
 						  <div class="form-group mb-0">
 							 <div class="input-group search-field mkActive" switchkey="Courses">
 								<input type="text" autocomplete="off" placeholder="Search for a course" name="keyword" class="form-control text-input" spellcheck="false" dir="auto"    value="">
-								<div class="btn-group country-dropdown" style=" ">
+								<div class="btn-group country-dropdown">
 									<button data-toggle="dropdown" title="" data-title="" class="form-control dropdown-toggle select-op text-truncate" type="button" aria-expanded="false">
 										<span class="text-left arrow-left btn-title initial arrow-down float-left w-100 text-truncate">Select Course </span>			
 									</button>
@@ -470,6 +472,9 @@
 				</div>
 		    </div>
 		</figure>
+
+	
+		<!-- Intro area -->
 		<div class="container">
 			<h1>Study at a University in Ireland</h1>
 			<div class="row">
@@ -485,6 +490,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Services -->
 		<article class="margin-40">
 			<div class="container">
 				<div class="row">
@@ -560,6 +567,8 @@
 		        </div>
 			</div>
 		</article>
+
+		<!-- New events and blogs -->
 		<section>
 			<div class="container">
 				<div class="row">
@@ -589,7 +598,7 @@
 					</div>
 
 					<div class="col-md-4 col-sm-12 col-xs-12 float-right mb-5">
-						<h3 class="news-heading"><i class="fa fa-newspaper-o blue-color" aria-hidden="true"></i> Study Guide</h3>
+						<h3 class="news-heading"><i class="fa fa-newspaper-o blue-color" aria-hidden="true"></i> Blog</h3>
 						<div class="blue-box p-4">
 							<div class="scroller mb-3">
 								<div class ="data mb-2">
@@ -611,206 +620,8 @@
 				</div> -->
 			</div>
 		</section>
-		<section>
-			<!-- <div class="container d-none d-sm-block">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="main-search margin-40">
-							<figure class="text-center">
-								<i class="fa fa-search" aria-hidden="true"></i>
-							</figure>
-							<h2 class="text-center">Search for your language school</h2>
-							<p>Our language school search will help you find the right school for you. Search by country, city, course type, accommodation and more!</p>
-							<form method="POST" action="/search/" role="form" id="menu-search-form" class="margin-20">
-								<div class="form-group">
-									<input name="keyword" type="text" class="form-control" placeholder="Enter a school name or keyword...">
-								</div>
-								<div class="form-group">
-																<select id="country-list" name="country" class="form-control">
-										<option value="">Choose a destination</option>
-																	</select>
-								</div>
-								<div class="form-group">
-									<select name="city" id="city-list" class="form-control">
-									  <option value="">City</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<select name="region" id="region-list" class="form-control">
-									  <option value="">Region</option>
-									</select>
-								</div>
-														<div class="form-group">
-									<select name="coursetype" class="form-control">
-									  <option value="">Study Type</option>
-									  							</select>
-								</div>
-								<button type="submit" class="btn btn-search col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 text-uppercase">Search</button>
-							</form>
-						</div>
-					</div>
-					<div class="col d-none d-sm-block">
-						<div class="main-consult margin-40">
-							<figure class="text-center">
-								<span class="notepad-icon"><img src="https://static.si-ireland.in/assets/images/notepad.png" /></span>
-							</figure>
-							<h2 class="text-center">Arrange your free consultation</h2>
-							<p>Once the form has been submitted, an SI-Ireland university consultant will be in touch shortly to discuss your enquiry.</p>
-							<div class="main-consult padding-none">
-								<form method="post" action="" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
-									<div class="form-group col-lg-6 col-md-6 col-sm-6 padding-none two_in_row">
-									<input name="txt_LastName" type="text" maxlength="30" id="txt_LastName" tabindex="2" class="form-control" placeholder="Family Name*" onkeyup="javascript:this.value=this.value.toUpperCase();">
-									<span id="rfvLastName" style="display:none;">Please enter your family name.<br></span>
-									</div>
-									<div class="form-group col-lg-6 col-md-6 col-sm-6 padding-rgt-none two_in_row">
-									<input name="txt_FirstName" type="text" maxlength="30" id="txt_FirstName" tabindex="1" class="form-control" placeholder="First Name*" onkeyup="javascript:this.value=this.value.toLowerCase();">
-									<span id="rfvFirstName" style="display:none;">Please enter your given name.<br></span>
-									</div>
-									<div class="form-group col-lg-6 col-md-6 col-sm-6 padding-none two_in_row">
-									<input name="txt_Number" type="text" id="txt_Number" tabindex="4" class="form-control" placeholder="Telephone Number*">
-									<span id="rfvPhone" style="display:none;">Please enter your telephone number.<br></span>
-									<span id="lblNote" style="font-size:9px;"></span>
-									</div>
-									<div class="form-group col-lg-6 col-md-6 col-sm-6 padding-rgt-none two_in_row">
-									<input name="Email" type="text" maxlength="250" id="Email" tabindex="3" class="form-control" placeholder="Email *">
-									<span id="rfvEmail" style="display:none;">Please enter your email address.<br></span>
-									<span id="RegularExpressionValidator1" style="display:none;">Please enter a valid email address<br></span>
-									</div>
-									<div class="form-group">
-									<select name="dropHowYouHeard" id="dropHowYouHeard" class="form-control">
-									<option selected="selected" value="">How did you hear about SI-Ireland?*</option>
-									<option value="31">Acquaintance or Family Member or Relative</option>
-									<option value="26">Blog, BBS or Social Network</option>
-									<option value="8">Event or Fair</option>
-									<option value="21">Google</option>
-									<option value="29">Newspaper</option>
-									<option value="27">National Organization
-									(British Council, Embassy, etc.)</option>
-									<option value="40">School or Teacher</option>
-									<option value="8">SI-UK Exhibition</option>
-									<option value="22">Yahoo</option>
-									<option value="81">Other</option>
-									</select>
-									<span id="rqfMarketing" style="display:none;">Please select how you heard about SI-UK.<br></span>
-									</div>
-									<textarea name="txt_Notes" id="txt_Notes" class="form-control" placeholder="Please enter any futher comments here."></textarea>
-									<input type="hidden" name="entered" id="entered" value="b5152af0-b7eb-4a39-8cfa-1deed6f08f20">
-									<input type="hidden" name="hiddenOffice" id="hiddenOffice" value="3">
-									<div class="checkbox">
-									<label>
-									<input id="chkNews" type="checkbox" name="chkNews">
-									<span id="lblConsent"> I consent to receiving digital and telephone communications from SI-Ireland regarding university application services. I understand I may change my preferences or opt-out of communications with SI-Ireland at any time using the unsubscribe link provided on SI-Ireland email communications.</span>
-									<span id="CheckBoxRequired" style="visibility:hidden;"></span>
-									</label>
-									</div>
-									<input type="submit" name="Button1" value="Submit" id="Button1" class="btn submit-button col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 text-uppercase">
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row d-none d-sm-none">
-					<div class="col-xs-12 search-section">
-						<a href="/" type="button" class="btn blue-btn btn-lg btn-block clearfix">
-							<span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search for your language school
-						</a>
-						<a href="/" type="button" class="btn green-btn btn-lg btn-block clearfix">
-							<span class="notepad-icon"><img src="https://static.si-ireland.in/assets/images/notepad.png" /></span> Arrange your free consultation
-						</a>
-					</div>
-				</div>
-			</div> -->
-		</section>
-		<!-- <footer>
-			<div class="container mt-4 d-none d-sm-block">
-				<div class="row">
-					<div class="col-md-3 col-sm-3 margin-40">
-						<div class="heading_footer">SI-Ireland</div>
-						<ul class="list-link">
-							<li>Suite 8-13, 1st Floor</li>
-							<li>Indra Palace, H Block </li>
-							<li>Middle Circle, Connaught Place </li>
-							<li>110001, India </li>
-							<li>Tel: +91-11-4357-8382</li>
-							<li>Email: <a href="mailto:info@si-ireland.in">info@si-ireland.in</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-3 margin-40">
-						<div class="heading_footer">IRELAND STUDY INFO</div>
-						<ul class="list-link">
-							<li><a href="/ireland-study-info/ireland-university-application/">Application Process</a></li>
-							<li><a href="/ireland-study-info/visa-requirements-ireland/">Visa Requirements</a></li>
-							<li><a href="/ireland-study-info/tuition-fees-ireland/">Tuition Fees</a></li>
-							<li><a href="/profiles/university/">University Profiles</a></li>
-							<li><a href="/ireland-study-info/ireland-university-rankings/">University Rankings </a></li>
-							<li><a href="/ireland-study-info/university-map/">Ireland University Map </a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-3 margin-40">
-						<div class="heading_footer">ABOUT US AND SERVICES</div>
-						<ul class="list-link">
-							<li><a href="/about/">About SI-Ireland</a></li>
-							<li><a href="/services/free-service/">Free Service</a></li>
-							<li><a href="/services/visa/">Visa Service</a></li>
-							<li><a href="/services/phd">PhD Service</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-3 margin-40">
-						<div class="heading_footer">IRELAND STUDY OPTIONS</div>
-						<ul class="list-link">
-							<li><a href="/study-options/foundation/">Foundation</a></li>
-							<li><a href="/study-options/undergraduate/">Undergraduate</a></li>
-							<li><a href="/study-options/pre-masters/">Pre-Masters</a></li>
-							<li><a href="/study-options/postgraduate-masters/">Postgraduate</a></li>
-							<li><a href="/study-options/phd/">PhD/Research</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="container mt-4 d-block d-sm-none padding-none">
-				<div class="col footer-l">
-					<h2 href="#showmap" class="pt-2 mb-0 pb-3" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="showmap">Site Map
-						<a href="javascript:void(0);" class="float-right">
-							<i aria-hidden="true" class="fa fa-angle-down"></i>
-						</a>
-					</h2>
-					<div class="col-xs-12 clearfix collapse" id="showmap">
-						<ul class="list-link mt-0">
-							<li><a href="/about/">About SI-Ireland</a></li>
-							<li><a href="/services/free-service/">Free Service</a></li>
-							<li><a href="/services/visa/">Visa Service</a></li>
-							<li><a href="/services/phd">PhD Service</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col footer-l">
-					<h2 class="pt-2 mb-0 pb-3">Enquire Now
-						<a href="/" class="float-right">
-							<i class="fa fa-comment-o" aria-hidden="true"></i>
-						</a>
-					</h2>
-				</div>
-			</div>
-
-			<div class="sidebar-social-media float-right">
-				<ul class="list-unstyled clearfix">
-					<li class="facebook">
-						<a href="https://www.facebook.com/Siireland/" target="_blank" title="Facebook"></a>
-					</li>
-					<li class="instagram">
-						<a href="https://www.instagram.com/siireland/" target="_blank" title="Instagram"></a>
-					</li>
-
-					<li class="twitter">
-						<a href="https://twitter.com/SIIreland2" target="_blank" title="Twitter"></a>
-					</li>
-					<li class="blog">
-						<a href="https://www.si-ireland.in/study-guide" target="_blank" title="Blog"></a>
-					</li>
-				</ul>
-			</div>
-
-		</footer> -->
+		
+		<!-- Footer -->
 		<div class="container">
 			<div class=" col-md-12 col-sm-12 col-xs-12 bottom">
 				<div class="row">
