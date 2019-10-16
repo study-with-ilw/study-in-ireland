@@ -23,19 +23,61 @@ var masterList= [
  }
 ]
 
-// TODO: Add other courses.
-const courseList = [
-   { name: 'Accounting', value: 'accounting' },
-   { name: 'Aerospace Engineering', value: 'aerospace-engineering' },
-   { name: 'Agriculture, Forestry and Food', value: 'agri-forect-food' },
-];
 
-const uniList = [
-   { name: 'Dublin City University', value: 'dcu' },
-   { name: 'Maynooth University', value: 'maynooth-university' },
-   { name: 'University College Cork', value: 'uni-college-cork' },
-   { name: 'University College Dublin', value: 'uni-college-dublin' },
-];
+
+// var jsonData = JSON.parse($.getJSON({'url': "http://localhost:8080/assets/data/courses.json", 'async': false})
+//    .responseText);
+// console.log(jsonData);
+
+let courseList = [];
+let uniList = [];
+
+function getCourses () {
+   $.ajax({
+       'async': true,
+       'url': "https://studyin-ireland.in/assets/data/courses.json",
+       'success': function (data) {
+         courseList = data;
+
+         let optionList = '';
+         courseList.forEach(val => {
+            optionList += `<li><a href="https://studyin-ireland.in/courses/${val.id}/">${val.name}</a></li>`;
+         });
+         $('#first-selection-dropdown')
+            .append(optionList);
+       }
+   });
+   // return jsonTemp;
+}
+
+getCourses();
+
+function getUniversities () {
+   $.ajax({
+       'async': true,
+       'url': "https://studyin-ireland.in/assets/data/universities.json",
+       'success': function (data) {
+         uniList = data;
+       }
+   });
+}
+
+getUniversities();
+
+
+// TODO: Add other courses.
+// const courseList = [
+//    { name: 'Accounting', value: 'accounting' },
+//    { name: 'Aerospace Engineering', value: 'aerospace-engineering' },
+//    { name: 'Agriculture, Forestry and Food', value: 'agri-forect-food' },
+// ];
+
+// const uniList = [
+//    { name: 'Dublin City University', value: 'dcu' },
+//    { name: 'Maynooth University', value: 'maynooth-university' },
+//    { name: 'University College Cork', value: 'uni-college-cork' },
+//    { name: 'University College Dublin', value: 'uni-college-dublin' },
+// ];
 
 const typeList = [
    { name: 'Postgraduate', value: 'postgraduate' },
@@ -52,14 +94,10 @@ function switchSearchMode(id) {
       case 'couMode': {
          let optionList = '';
          courseList.forEach(val => {
-            // optionList += `<option value="${val.value}">${val.name}</option>`
-            optionList += `<li><a href="#">${val.name}</a></li>`;
+            optionList += `<li><a href="https://studyin-ireland.in/courses/${val.id}/">${val.name}</a></li>`;
          });
+
          let option2List = '';
-         typeList.forEach(val => {
-            // option2List += `<option value="${val.value}">${val.name}</option>`
-            option2List += `<li><a href="#">${val.name}</a></li>`;
-         });
 
          $('#couMode').addClass('active');
          $('#schMode').removeClass('active');
@@ -79,7 +117,6 @@ function switchSearchMode(id) {
          $('#second-selection-dropdown')
             .append(option2List);
    
-
          break;
       }
       case 'schMode': {
@@ -96,7 +133,7 @@ function switchSearchMode(id) {
          let optionList = '';
          uniList.forEach(val => {
             // optionList += `<option value="${val.value}">${val.name}</option>`
-            optionList += `<li><a href="#">${val.name}</a></li>`;
+            optionList += `<li><a href="https://studyin-ireland.in/universities/${val.id}/">${val.name}</a></li>`;
 
          });
 
@@ -162,7 +199,9 @@ $('#myInput').focusin(() => {
 });
 
 $('#myInput').focusout(() => {
-   $('#first-selection-dropdown').addClass('d-none');
+   setTimeout(() => {
+      $('#first-selection-dropdown').addClass('d-none');
+   }, 500);
 });
  
  function filterFunction() {
