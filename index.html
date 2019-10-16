@@ -1,367 +1,175 @@
-<!doctype html>
-<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Study in Ireland | Indian Student Guide to Studying in Ireland</title>
-	<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-	<link rel="stylesheet" href="./style/style.css">
-	<link rel="stylesheet" href="./style/new-style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<style type="text/css">
-		#submenu-list .columns {
-			display: table-cell;
-			width: 25%;
-			padding: 10px 5px;
-			color: #fff;
-		}
+    <title>Study Ireland</title>
 
-		#submenu-list {
-			background: #fff;
-		}
-	</style>
-	<meta name="description"
-		content="Learn more about studying at an Irish university: Search courses, universities and apply to study in Ireland using ABC's free application service.">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="./assets/img/fav-icon.png">
-</head>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+		<link rel="stylesheet" href="./style/style.css">
+		<link rel="stylesheet" href="./style/new-style.css" />
+
+
+    <!-- Font Awesome JS -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+ </head>
 
 <body>
+    <div class="wrapper">
 
-	<div
-  class="modal fade"
-  id="submenu-list"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="myModalLabel"
-  style="margin-top:3em;"
->
-  <a
-    href="javascript:void(0)"
-    class="closebtn"
-    data-dismiss="modal"
-    aria-label="Close"
-    style="float: right;"
-    >Close <i class="fa fa-times" aria-hidden="true"></i>
-  </a>
-  
-    <div class="columns">
-      <ul class="list-unstyled modal-dialog"><li><a href="#"><p>Business Analytics</p></a></li><li><a href="#"><p>Data Science</p></a></li><li><a href="#"><p>Data Analytics</p></a></li></ul>
+    <!-- Sidebar  -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+        <h4 class="text-center"><a href="/">Study Ireland</a></h4>
     </div>
-    <div class="columns">
-      <ul class="list-unstyled modal-dialog"><li><a href="#"><p>Software Engineer</p></a></li><li><a href="#"><p>Artificial Intelligence</p></a></li><li><a href="#"><p>Finance Technology</p></a></li></ul>
-    </div>
-    <div class="columns">
-      <ul class="list-unstyled modal-dialog"><li><a href="#"><p>Project Management</p></a></li><li><a href="#"><p>Cloud Computing</p></a></li><li><a href="#"><p>Health Informatics</p></a></li></ul>
-    </div>
-    <div class="columns">
-      <ul class="list-unstyled modal-dialog"><li><a href="#"><p>MBA</p></a></li><li><a href="#"><p>Management Information Systems</p></a></li><li><a href="#"><p>Cyber Security</p></a></li></ul>
-    </div>
-  
-  
-</div>
-<div
-  class="modal left fade"
-  id="left-menu"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="myModalLabel"
->
-  <ul class="list-unstyled modal-dialog" role="document">
-    <li class="clearfix">
-      <a
-        href="javascript:void(0)"
-        class="closebtn"
-        data-dismiss="modal"
-        aria-label="Close"
-        >Close <i class="fa fa-times" aria-hidden="true"></i
-      ></a>
-    </li>
-    <li class="cont-btn"><a href="/contact-us">Contact Us</a></li>
 
-    <li><a href="/course-search/">Course Search</a></li>
-    <li><a href="./universities/">University Profiles</a></li>
-    <li><a href="./courses/">University Courses</a></li>
-    <li><a href="./blog/">Blog</a></li>
-    <li>
-      <a href="#Menu" data-toggle="collapse" data-parent="#accordion"
-        >News and Events
-        <div class="pull-right">
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    <ul class="list-unstyled CTAs">
+        <li>
+            <a href="/contact-us" class="download">Contact Us</a>
+        </li>
+    </ul>
+
+    <ul class="list-unstyled components">
+        <li class="list-unstyled components">
+            <a href="./universities/">University Profiles</a>
+        </li>
+        <li class="list-unstyled components">
+            <a href="./courses/">University Courses</a>
+        </li>
+        <li class="list-unstyled components">
+            <a href="./blog/">Blog</a>
+        </li>
+        <li>
+            <a href="#newsEventsMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">News and Events</a>
+            <ul class="collapse list-unstyled" id="newsEventsMenu">
+                <li><a href="./news/">News</a></li>
+                <li><a href="./events/">Events</a></li>
+            
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!-- Page Content  -->
+<div id="content">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-toggler" >
+                <i class="fas fa-align-left"></i>
+                <!-- <span>Toggle Sidebar</span> -->
+            </button>
+
+            <div class="ml-auto text-center">
+                <img src="./assets/images/si-logo.png" style="height: 50px; width: 130px;" />
+            </div>
+
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=917050512345"
+                            text= Hello,%20I%20am%20looking%20to%20study%20in%20Ireland%20and%20want%20to%20know%20more%20about%20your%20services.%20Can%20we%20talk?>
+                                <i class="lni-whatsapp"></i>
+                                Send Message
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:+917050512345">
+                            <i class="lni-phone-handset"></i>
+                            Call us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href='./contact-us/'>
+                            <i class="lni-book"></i>
+                            Book a Free Consultation
+
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Page</a>
+                    </li> -->
+                </ul>
+            </div>
         </div>
-      </a>
-      <ul id="Menu" class="panel-collapse collapse list-unstyled">
-        <li><a href="./news/">News</a></li>
-        <li><a href="./events/">Events</a></li>
-      </ul>
-    </li>
-    <li><a href="./about-us/">About Study Ireland </a></li>
-  </ul>
-</div>
-<header>
-  <div class="desk-logo" style="height: 80px; text-align: center">
-    <a href="/">
-      <img style="height: 100%" src="./assets/images/logo.jpg" alt="Study Ireland" class="img-fluid"/>
-    </a>
-  </div>
-  <nav class="g-bar">
-    <div class="container-fluid">
-      <div class="call-button">
-        <a href="https://api.whatsapp.com/send?phone=917050512345" text= Hello,%20I%20am%20looking%20to%20study%20in%20Ireland%20and%20want%20to%20know%20more%20about%20your%20services.%20Can%20we%20talk?>
-          <span>
-            <i
-              class="fa fa-whatsapp"
-              aria-hidden="true"
-              style="font-size: 20px;"
-            ></i>
-            Send Message
-          </span>
-        </a>
+    </nav>
+
+
+
+	    <div class="row" style="position: relative;">
+      <div class="col-12">
+          <ul class="list-unstyled list-group list-group-flush">
+              <li sy-active class="list-unstyled">
+                <a class="d-none d-sm-block" href="#">
+                  <img alt="Study Ireland" src="assets/images/homepage-banner-ls.jpg" class="img-fluid">
+                </a>
+                <a class="d-block d-sm-none" href="#">
+                  <img alt="Study Ireland" src="assets/images/homepage-banner.jpg" class="img-fluid">
+                </a>
+              </li>
+            </ul>
       </div>
-      <div class="header-top-item clearfix">
-        <a href="/" class="nav-icon d-none d-xl-block"></a>
-        <div class="navbar navbar-dark float-right">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="modal"
-            data-target="#submenu-list"
-          >
-            <p class="navbar-text">Find Program</p>
-          </button>
-          <a
-            href="#"
-            class=" d-none d-sm-block header-top-link"
-            title="Book a free consultation"
-          >
-            <span class="link-text d-none d-sm-block" onclick= "location='./contact-us/'"
-              >Book a Free Consultation</span
-            >
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="modal"
-            data-target="#left-menu"
-          >
-            <p class="navbar-text">Menu</p>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
+      <div id="content-wrapper" class="banner-search d-none d-sm-block">
+          <div class="container text-center" style="width: 100%;">
+            <h1 class="banner-font text-center d-none d-sm-block">STUDY IRELAND</h1>
+            <p class="banner-font d-none d-sm-block">We can help you enter any university</p>
 
+            <div class="d-mob">
+              <!-- <p class="switches">
+                <button id="couMode" type="button" onclick="switchSearchMode('couMode')" class="btn btn-outline-primary active">Courses</button>
+                <button id="schMode" type="button" onclick="switchSearchMode('schMode')" class="btn btn-outline-primary">Scholarships</button>
+                <button id="uniMode" type="button" onclick="switchSearchMode('uniMode')" class="btn btn-outline-primary">Universities</button>
+                <button id="webMode" type="button" onclick="switchSearchMode('webMode')" class="btn btn-outline-primary">Website</button>
+              </p> -->
 
-
-
-		<!-- Banner area -->
-	<figure class="banner">
-      <section>
-        <ul class="list-group list-group-flush">
-          <li sy-active>
-            <a class="d-none d-sm-block" href="#">
-              <img alt="Study Ireland" src="assets/images/landing-page.jpg" class="img-fluid">
-            </a>
-            <a class="d-block d-sm-none" href="/search/">
-              <img alt="Study Ireland" src="assets/banner/main-banner-mb.jpg" class="img-fluid">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <div id="content-wrapper">
-        <div class="container">
-          <h2 class="text-center d-none d-sm-block">STUDY IN IRELAND <span>We can help you enter any university</span>
-          </h2>
-          <h2 class="text-center d-block d-sm-none">STUDY IN IRELAND <span>We can help you enter any <br>
-              university</span>
-          </h2>
-          <div class="d-mob">
-            <p class="d-block d-sm-none txt-green">Search for University Courses and Scholarships</p>
-            <p class="switches">
-              <button type="button" switchkey="Courses" class="btn btn-outline-primary btnSwitch active">Courses</button>
-              <button type="button" switchkey="Scholarships"
-                class="btn btn-outline-primary btnSwitch">Scholarships</button>
-              <button type="button" switchkey="Institutions"
-                class="btn btn-outline-primary btnSwitch">Universities</button>
-              <button type="button" switchkey="Website" class="btn btn-outline-primary btnSwitch">Website</button>
-            </p>
-            <form class="get-book ls_school_form searchbox searchbox-singleline search-form course-box"
-              id="search-form-top" role="form" action="/course-search/" method="post">
-              <div class="form-group mb-0">
-                <div class="input-group search-field mkActive" switchkey="Courses">
-                  <input type="text" autocomplete="off" placeholder="Search for a course" name="keyword"
-                    class="form-control text-input" spellcheck="false" dir="auto" value="">
-                  <div class="btn-group country-dropdown">
-                    <button data-toggle="dropdown" title="" data-title=""
-                      class="form-control dropdown-toggle select-op text-truncate" type="button" aria-expanded="false">
-                      <span
-                        class="text-left arrow-left btn-title initial arrow-down float-left w-100 text-truncate">Select
-                        Course </span>
-                    </button>
-                    <ul id="country" role="menu" class="select-work dropdown-menu arrange-menu">
-                      <li data-value="" class="init dropdown-reset crs_cls">Choose a subject</li>
-                      <li class="divider" role="presentation"></li>
-                      <li class="crs_cls" page="home" data-value="Accounting">Accounting</li>
-                      <li class="crs_cls" page="home" data-value="Aerospace Engineering">Aerospace Engineering</li>
-                      <li class="crs_cls" page="home" data-value="Agriculture, Forestry and Food">Agriculture, Forestry
-                        and Food</li>
-                      <li class="crs_cls" page="home" data-value="American Studies">American Studies</li>
-                      <li class="crs_cls" page="home" data-value="Anatomy and Physiology">Anatomy and Physiology</li>
-                      <li class="crs_cls" page="home" data-value="Anthropology">Anthropology</li>
-                      <li class="crs_cls" page="home" data-value="Archaeology">Archaeology</li>
-                      <li class="crs_cls" page="home" data-value="Architecture">Architecture</li>
-                      <li class="crs_cls" page="home" data-value="Art">Art</li>
-                      <li class="crs_cls" page="home" data-value="Biosciences">Biosciences</li>
-                      <li class="crs_cls" page="home" data-value="Building and Town and Country Planning">Building and
-                        Town and Country Planning</li>
-                      <li class="crs_cls" page="home" data-value="Business">Business</li>
-                      <li class="crs_cls" page="home" data-value="Chemistry">Chemistry</li>
-                      <li class="crs_cls" page="home" data-value="Civil Engineering">Civil Engineering</li>
-                      <li class="crs_cls" page="home" data-value="Classics and Ancient History">Classics and Ancient
-                        History</li>
-                      <li class="crs_cls" page="home" data-value="Computer Science">Computer Science</li>
-                      <li class="crs_cls" page="home" data-value="Criminology">Criminology</li>
-                      <li class="crs_cls" page="home" data-value="Dance">Dance</li>
-                      <li class="crs_cls" page="home" data-value="Dentistry">Dentistry</li>
-                      <li class="crs_cls" page="home" data-value="Design and Crafts">Design and Crafts</li>
-                      <li class="crs_cls" page="home" data-value="Development Studies">Development Studies</li>
-                      <li class="crs_cls" page="home" data-value="Drama">Drama</li>
-                      <li class="crs_cls" page="home" data-value="Earth Science">Earth Science</li>
-                      <li class="crs_cls" page="home" data-value="Economics">Economics</li>
-                      <li class="crs_cls" page="home" data-value="Education">Education</li>
-                      <li class="crs_cls" page="home" data-value="Electrical Engineering">Electrical Engineering</li>
-                      <li class="crs_cls" page="home" data-value="English and Creative Writing">English and Creative
-                        Writing</li>
-                      <li class="crs_cls" page="home" data-value="Environmental Studies">Environmental Studies</li>
-                      <li class="crs_cls" page="home" data-value="Event Management">Event Management</li>
-                      <li class="crs_cls" page="home" data-value="Fashion">Fashion</li>
-                      <li class="crs_cls" page="home" data-value="Film Production">Film Production</li>
-                      <li class="crs_cls" page="home" data-value="Forensic Science">Forensic Science</li>
-                      <li class="crs_cls" page="home" data-value="General Engineering">General Engineering</li>
-                      <li class="crs_cls" page="home" data-value="Geography">Geography</li>
-                      <li class="crs_cls" page="home" data-value="Health">Health</li>
-                      <li class="crs_cls" page="home" data-value="History">History</li>
-                      <li class="crs_cls" page="home" data-value="Hospitality">Hospitality</li>
-                      <li class="crs_cls" page="home" data-value="International Foundation Programme">International
-                        Foundation Programme</li>
-                      <li class="crs_cls" page="home" data-value="Journalism">Journalism</li>
-                      <li class="crs_cls" page="home" data-value="Law">Law</li>
-                      <li class="crs_cls" page="home" data-value="Linguistics">Linguistics</li>
-                      <li class="crs_cls" page="home" data-value="Management">Management</li>
-                      <li class="crs_cls" page="home" data-value="Marine Science">Marine Science</li>
-                      <li class="crs_cls" page="home" data-value="Marketing">Marketing</li>
-                      <li class="crs_cls" page="home" data-value="Mathematics">Mathematics</li>
-                      <li class="crs_cls" page="home" data-value="MBA">MBA</li>
-                      <li class="crs_cls" page="home" data-value="Mechanical Engineering">Mechanical Engineering</li>
-                      <li class="crs_cls" page="home" data-value="Media Studies">Media Studies</li>
-                      <li class="crs_cls" page="home" data-value="Medicine">Medicine</li>
-                      <li class="crs_cls" page="home" data-value="Music">Music</li>
-                      <li class="crs_cls" page="home" data-value="Nursing and Midwifery">Nursing and Midwifery</li>
-                      <li class="crs_cls" page="home" data-value="Pharmacy">Pharmacy</li>
-                      <li class="crs_cls" page="home" data-value="Philosophy">Philosophy</li>
-                      <li class="crs_cls" page="home" data-value="Physics">Physics </li>
-                      <li class="crs_cls" page="home" data-value="Politics">Politics</li>
-                      <li class="crs_cls" page="home" data-value="Psychology">Psychology</li>
-                      <li class="crs_cls" page="home" data-value="Public Relations">Public Relations</li>
-                      <li class="crs_cls" page="home" data-value="Religious Studies">Religious Studies</li>
-                      <li class="crs_cls" page="home" data-value="Social Policy and Administration">Social Policy and
-                        Administration</li>
-                      <li class="crs_cls" page="home" data-value="Social Work">Social Work</li>
-                      <li class="crs_cls" page="home" data-value="Sociology">Sociology</li>
-                      <li class="crs_cls" page="home" data-value="Sports Science">Sports Science</li>
-                      <li class="crs_cls" page="home" data-value="Tourism">Tourism</li>
-                      <li class="crs_cls" page="home" data-value="Veterinary Science">Veterinary Science</li>
-                    </ul>
-                    <input id="courseid" type="hidden" value="" name="keywordselect">
-                  </div>
-  
-                  <div class="btn-group uni-dropdown" style="display:none">
-                    <button data-toggle="dropdown" title="" data-title=""
-                      class="form-control dropdown-toggle select-op text-truncate" type="button" aria-expanded="false">
-                      <span
-                        class="text-left arrow-left btn-title initial arrow-down float-left w-100 text-truncate">Choose a
-                        University</span>
-                    </button>
-                    <ul id="univer" role="menu" class="select-work dropdown-menu arrange-menu">
-                      <li data-value="" class="init dropdown-reset uni_cls">Choose a University</li>
-                      <li class="divider" role="presentation"></li>
-                      <li class="uni_cls" data-value="330">Dublin City University</li>
-                      <li class="uni_cls" data-value="332">Maynooth University</li>
-                      <li class="uni_cls" data-value="465">University College Cork</li>
-                      <li class="uni_cls" data-value="364">University College Dublin</li>
-                    </ul>
-                    <input id="pre_sessional_uni" type="hidden" value="" name="pre_sessional_uni">
-                  </div>
-  
-                  <div class="btn-group city-dropdown">
-                    <button data-toggle="dropdown" title="" data-title=""
-                      class="form-control dropdown-toggle select-op text-truncate" type="button" aria-expanded="false">
-                      <span
-                        class="text-left arrow-left btn-title initial arrow-down float-left w-100 text-truncate">Level</span>
-                    </button>
-                    <ul id="level" role="menu" class="select-work dropdown-menu arrange-menu">
-                      <li class="lvl_cls" data-value="Postgraduate">Postgraduate</li>
-                      <li class="lvl_cls" data-value="Undergraduate">Undergraduate</li>
-                      <li class="lvl_cls" data-value="Foundation">Foundation</li>
-                      <li class="lvl_cls" data-value="Pre-Sessional">Pre-Sessional</li>
-                      <li class="lvl_cls" data-value="English Language">English Language</li>
-                      <li class="lvl_cls" data-value="Pre-Masters">Pre-Masters</li>
-                      <li class="lvl_cls" data-value="Research">Research</li>
-                    </ul>
-                    <input id="levelcls" type="hidden" value="" name="course_type">
-                  </div>
-                  <input type="hidden" value="1" name="submitted">
-                  <input id="orderBy" type="hidden" value="" name="order">
-                  <input id="location_crs" type="hidden" value="" name="location">
-                  <input type="hidden" value="0" name="page">
-                  <div class="clearfix"></div>
-                  <span class="input-group-btn info-submit">
-                    <button id="sendbutton" name="search" type="submit" class="btn btn-submit"><i
-                        class="fa fa-search"></i> <span>SEARCH COURSES<span></button>
-                  </span>
-                </div>
-                <div class="input-group search-field mkActive" switchkey="Scholarships" style="display:none">
-                  <input type="hidden" value="1" name="submitted">
-                  <select name="university" class="uniSelect form-control">
-                    <option value="">Choose a University</option>
-                    <option value="Any">Any</option>
-                    <option value="466">University of Limerick</option>
-                    <option value="352">National University of Ireland, Galway</option>
-                    <option value="332">Maynooth University</option>
-                    <option value="464">Trinity College Dublin</option>
-                    <option value="491">TU Dublin</option>
-                    <option value="465">University College Cork</option>
-                    <option value="364">University College Dublin</option>
-                  </select>
-                  <span class="input-group-btn info-submit">
-                    <button id="sendbutton" name="search" type="submit" class="btn btn-submit"><i
-                        class="fa fa-search"></i> <span>SEARCH UNIVERSITY<span></button>
-                  </span>
-                </div>
-                <div class="input-group search-field mkActive" switchkey="InstitutionsWebsite" style="display:none;">
-                  <input type="text" class="form-control InsWeb" name="q" placeholder="Search for Universities">
-                  <span class="input-group-btn info-submit">
-                    <button id="sendbutton" name="search" type="submit" class="btn btn-submit"><i
-                        class="fa fa-search"></i> <span>SEARCH<span></button>
-                  </span>
+              <div class="get-book ls_school_form searchbox searchbox-singleline search-form course-box">
+                <div class="form-group mb-0">
+                    <div class="row" style="height: 40px; width: 60%; margin-left: 20%;">
+                        <div class="col-10">
+                            <div id="myDropdown" class="dropdown-content myDropdown">
+                              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"/>
+                              <ul style="list-style: none" id="first-selection-dropdown" class="d-none">
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <!-- <div class="input-group-btn info-submit">
+                                <button id="sendbutton" style="width: 100%; height: 40px" name="search" onclick="filterMasterList()" class="btn btn-submit">
+                                  <i class="fa fa-search"></i>
+                                </button>
+                            </div> -->
+                           <select onchange="switchSearchMode(this.value);" style="height: 40px;">
+                             <option value="couMode" onclick="switchSearchMode('couMode')">Courses</option>
+                             <option value="uniMode" onclick="switchSearchMode('uniMode')">Universities</option>
+                           </select>
+                        </div>
+                    </div>          
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
-    </figure>
-  
+    </div>
   
     <!-- Intro area -->
-    <div class="container">
-      <h1>Study at a University in Ireland</h1>
+    <div class="container new-section">
+      <h2>Study at a University in Ireland</h2>
       <div class="row">
-        <div class="col-md-4 col-sm-12 col-xs-12 text-center"><img src="./assets/images/ireland-intro.jpg"
-            class="img-fluid"></div>
+        <div class="col-md-4 col-sm-12 col-xs-12 text-center p-2">
+          <img src="./assets/images/ireland-intro.jpg"
+            class="img-fluid">
+        </div>
         <div class="col-md-8 col-sm-12 col-xs-12">
           <div>
             <p>Ireland is famous as an international hub for high quality scientific research. Many students from around the world, including India, visit Ireland to pursue research in various fields. The country is home to leading global MNCs.</p>
@@ -372,82 +180,44 @@
     </div>
   
     <!-- Services -->
-    <article class="margin-40">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-12 col-xs-12 mt-5 mb-5 d-none d-sm-block">
-            <div class="green-bg p-3">
-              <h2 class="text-center">Application Process</h2>
-               <div class="text-center pb-4">
-                <img src="./assets/images/app-icon.png" class="img-fluid" alt="Application Process">
-              </div>
-              <div class="text-center mb-2"><a class="btn btn-outline-light"
-                  href="./application-services/" role="button">Find Out More</a></div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12 mt-3 mb-0 d-block d-sm-none">
-            <div class="green-bg p-3">
-              <div class="row">
-                <div class="col-4">
-                  <img src="assets/images/app-icon.png" class="img-fluid" alt="Application Process">
-                </div>
-                <div class="col-8 pr-0">
-                  <h2 class="text-left">Application Process</h2>
-                  <div class="text-left mb-2"><a class="btn btn-outline-light"
-                      href="./application-services/" role="button">Find Out More</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12 mt-5 mb-5 d-none d-sm-block">
-            <div class="orange-bg p-3">
-              <h2 class="text-center">Our Services</h2>
+    <article class="new-section">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mt-5 mb-5">
+          <div class="p-3">
+            <h3 class="text-center">Application Process</h3>
               <div class="text-center pb-4">
-                <img src="assets/images/service-icon.png" class="img-fluid" alt="Our Services">
-              </div>
-              <div class="text-center mb-2"><a class="btn btn-outline-light" href="./services/" role="button">Find Out
-                  More</a></div>
+              <h1 class="lni-write" style="font-size: 5em;"></h1>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12 mt-3 mb-0 d-block d-sm-none">
-            <div class="orange-bg p-3">
-              <div class="row">
-                <div class="col-4">
-                  <img src="assets/images/service-icon.png" class="img-fluid" alt="Our Services">
-                </div>
-                <div class="col-8 pr-0">
-                  <h2 class="text-left">Our Services</h2>
-                  <div class="text-left mb-2"><a class="btn btn-outline-light" href="./services/" role="button">Find Out
-                      More</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12 mt-5 mb-5 d-none d-sm-block">
-            <div class="greens-bg p-3">
-              <h2 class="text-center">Universities</h2>
-              <div class="text-center pb-4">
-                <img src="assets/images/in-all-uni-rank-ireland.png" class="img-fluid" alt="Ireland Uni Guide">
-              </div>
-              <div class="text-center mb-2"><a class="btn btn-outline-light"
-                  href="./universities/" role="button">Find Out More</a></div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12 mt-3 mb-3 d-block d-sm-none">
-            <div class="greens-bg p-3">
-              <div class="row">
-                <div class="col-4">
-                  <img src="assets/images/in-all-uni-rank-ireland.png" class="img-fluid" alt="Ireland Uni Guide">
-                </div>
-                <div class="col-8 pr-0">
-                  <h2 class="text-left">Ireland Uni Guide</h2>
-                  <div class="text-left mb-2"><a class="btn btn-outline-light"
-                      href="/ireland-study-info/ireland-university-rankings/" role="button">Find Out More</a></div>
-                </div>
-              </div>
+            <div class="text-center mb-2">
+              <a class="btn btn-outline-dark" href="./application-services/"
+              role="button">Find Out More</a>
             </div>
           </div>
         </div>
+        <div class="col-md-4 col-sm-12 mt-5 mb-5">
+          <div class="p-3">
+            <h3 class="text-center">Our Services</h3>
+              <div class="text-center pb-4">
+              <h1 class="lni-support" style="font-size: 5em;"></h1>
+            </div>
+            <div class="text-center mb-2">
+              <a class="btn btn-outline-dark" href="./services/"
+              role="button">Find Out More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mt-5 mb-5">
+          <div class="p-3">
+            <h3 class="text-center">Universities</h3>
+              <div class="text-center pb-4">
+              <h1 class="lni-graduation" style="font-size: 5em;"></h1>
+            </div>
+            <div class="text-center mb-2">
+              <a class="btn btn-outline-dark" href="./universities/"
+              role="button">Find Out More</a>
+            </div>
+          </div>
+        </div>       
       </div>
     </article>
 	
@@ -462,75 +232,24 @@
 		</div>
 	</div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous">
-  </script>
-	<script src="./js/main.js"></script>
-	<script>
+   </div>
+ 
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="./js/master.js"></script>
+
+
+<script type="text/javascript">
 		$(document).ready(function () {
-
-
-			$("#phone").intlTelInput({
-				nationalMode: true,
-				initialCountry: "auto",
-				defaultCountry: "auto",
-				geoIpLookup: function (callback) {
-					$.get('https://ipinfo.io', function () { }, "jsonp").always(function (resp) {
-						var countryCode = (resp && resp.country) ? resp.country : "";
-						callback(countryCode);
-					});
-				},
-				//utilsScript: "build/js/utils.js" // just for formatting/placeholders etc
-			});
-			$("#phone").change(function () {
-				$("#phonecode").val($("#phone").intlTelInput("getSelectedCountryData").dialCode);
-				$("#phonedata").val($("#phone").intlTelInput("getSelectedCountryData").iso2);
-			});
-			$("#consultation input.firstname").attr("onkeyup", "this.value=toTitleCase(this.value)");
-			$("#consultation input.familyname").attr("onkeyup", "this.value=toTitleCase(this.value)");
+				$('#sidebarCollapse').on('click', function () {
+						$('#sidebar').toggleClass('active');
+				});
 		});
-		$(window).on('load', function () {
-			setTimeout(function () {
-				$("#phonecode").val($("#phone").intlTelInput("getSelectedCountryData").dialCode);
-				$("#phonedata").val($("#phone").intlTelInput("getSelectedCountryData").iso2);
-			}, 500);
-		});
-		$('select').on('change', function () {
-			var nationality = $("#nationality option:selected").text();
-			$("#nationalityname").attr('value', nationality);
-			var studytype = $("#studytype option:selected").text();
-			$("#studytypename").attr('value', studytype);
-			var desiredcourse = $("#desiredcourse option:selected").text();
-			$("#desiredcoursename").attr('value', desiredcourse);
-			var howyouheard = $("#howyouheard option:selected").text();
-			$("#howyouheardname").attr('value', howyouheard);
-		});
-		$('#consultation').submit(function () {
-			$(this).find('#consultation').prop('disabled', true);
-		});
-		function phonevalidate() {
-			var phonenumber = $('#phone').val();
-			var phoneNum = phonenumber.replace(/[^\d]/g, '');
-			if (phoneNum.length < 7) {
-				document.getElementById("phoneerror").innerHTML = "<strong>*Please check your phone number</strong>";
-				document.getElementById("phone").focus();
-				$("#phoneerror").show();
-				$("input[id=consultation]").attr('disabled', 'disabled');
-			} else {
-				$("#updatephone").val(phoneNum);
-				$("#phoneerror").hide();
-				$("input[id=consultation]").removeAttr('disabled');
-			}
-		}
-		function toTitleCase(str) {
-			return str.replace(
-				/\w\S*/g,
-				function (txt) {
-					return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-				}
-			);
-		}
-	</script>
+</script>
 </body>
 
 </html>
