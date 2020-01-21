@@ -74,59 +74,195 @@
               <img src="../assets/images/si-logo.png" style="height: 50px; width: 130px;" />
           </div>
 
-          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fas fa-align-justify"></i>
-          </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="https://api.whatsapp.com/send?phone=917050512345"
-                          text= Hello,%20I%20am%20looking%20to%20study%20in%20Ireland%20and%20want%20to%20know%20more%20about%20your%20services.%20Can%20we%20talk?>
-                              <i class="lni-whatsapp"></i>
-                              Send Message
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="tel:+917050512345">
-                          <i class="lni-phone-handset"></i>
-                          Call us
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href='../contact-us/'>
-                          <i class="lni-book"></i>
-                          Book a Free Consultation
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=917050512345"
+                            text= Hello,%20I%20am%20looking%20to%20study%20in%20Ireland%20and%20want%20to%20know%20more%20about%20your%20services.%20Can%20we%20talk?>
+                                <i class="lni-whatsapp"></i>
+                                Send Message
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:+917050512345">
+                            <i class="lni-phone-handset"></i>
+                            Call us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href='../contact-us/'>
+                            <i class="lni-book"></i>
+                            Book a Free Consultation
 
-                      </a>
-                  </li>
-                  <!-- <li class="nav-item">
-                      <a class="nav-link" href="#">Page</a>
-                  </li> -->
-              </ul>
-          </div>
-      </div>
-  </nav>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Page</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
 
-<div class="container">
-      <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="/">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page"><a href="../contact-us/index.html">Contact us</a></li>
-          </ol>
-      </nav>
-      <div class="container new-section">
-        <h2>Contact us</h2>
-        <div class="row">
-          <div class=col-12>
-            <div class="consult-form col-12">
-              <p class="subtitle">All fields with <span style="color: red">*</span> are required.</p>
-              
-              <form action="https://usebasin.com/f/130f45dddafa" method="POST">
-                <div class="row">
-                  <div class="col-6 pb-2"><input type="text" name="firstname" value="" id="firstname" maxlength="64" size="32" class="form-control radius firstname" placeholder="First Name*" required="required" pattern="[a-zA-Z\s\.\-_]+" oninvalid="this.setCustomValidity('Please enter your first name')" oninput="setCustomValidity('')"  />
+	<div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="../contact-us/index.html">Contact us</a></li>
+            </ol>
+        </nav>
+        <div class="container new-section">
+          <h2>Contact us</h2>
+          <div class="row">
+            <div class=col-12>
+              <div class="consult-form col-12">
+                <p class="subtitle">All fields with <span style="color: red">*</span> are required.</p>
+                
+                <form action="https://usebasin.com/f/130f45dddafa" method="POST" target="0">
+                  <div class="row">
+                    <div class="col-6 pb-2"><input type="text" name="firstname" value="" id="firstname" maxlength="64" size="32" class="form-control radius firstname" placeholder="First Name*" required="required" pattern="[a-zA-Z\s\.\-_]+" oninvalid="this.setCustomValidity('Please enter your first name')" oninput="setCustomValidity('')"  />
+                    </div>
+                    <div class="col-6 pb-2"><input type="text" name="familyname" value="" id="familyname" maxlength="64" size="32" class="form-control radius familyname" placeholder="Last Name*" required="required" pattern="[a-zA-Z\s\.\-_]+" oninvalid="this.setCustomValidity('Please enter your last name')" oninput="setCustomValidity('')"  />
+                    </div>
+                    <div class="col-6 pb-2">
+                      <input type="text" name="phone" value="" id="phone" maxlength="20" size="20" class="form-control" placeholder="Phone Number*" required="required" oninvalid="this.setCustomValidity('Please enter your phone number')" oninput="setCustomValidity('')" onkeyup="phonevalidate()"  />
+                      <span style="padding:0px;" class="phoneerror text-danger" id="phoneerror"></span><input type="hidden" id="updatephone" name="updatephone" value=""/><input type="hidden" id="phonecode" name="phonecode" value=""/>
+                    </div>
+                    <div class="col-6 pb-2">
+                      <input type="email" name="email" value="" id="email" maxlength="64" size="32" class="form-control radius btm_10" placeholder="Email*" required="required" oninvalid="this.setCustomValidity('Please enter your email')" oninput="setCustomValidity('')"  />
+                    </div>
+                    <div class="col-12 pb-2">
+                      <input type="text" name="city" value="" id="city" maxlength="64" size="32" class="form-control radius btm_10" placeholder="City*" required="required" oninvalid="this.setCustomValidity('Please enter your city')" oninput="setCustomValidity('')"  />
+                    </div>
+                    <div class="col-6 pb-2">
+                      <select required aria-required="true" name="studytype" id="studytype" class="selectpicker form-control">
+                      <option value="">Type of Study*</option>
+                      <option value="A-level">A-level</option>
+                      <option value="boarding-school">Boarding School</option>
+                      <option value="undergraduate">Undergraduate</option>
+                      <option value="diploma">Diploma</option>
+                      <option value="english">English Study (ELT/EFL)</option>
+                      <option value="postgraduate">Postgraduate</option>
+                      <option value="foundation">Foundation</option>
+                      <option value="phd">Phd</option>
+                    </select>
+                      <input type="hidden" id="studytypename" name="studytypename" value=""/>
+                    </div>
+                    <div class="col-6 pb-2">
+                      <!-- <select required aria-required="true" name="desiredcourse" id="desiredcourse" class="selectpicker form-control"> -->
+                      <!-- <option value="">Which Subject are you interested in?*</option></select> -->
+                      <select required="" aria-required="true" name="desiredcourse" id="desiredcourse" class="selectpicker form-control">
+                        <option value="">Which Subject are you interested in?*</option>
+                        <option value="Accounting">Accounting</option>
+                        <option value="Animal Science">Animal Science</option>
+                        <option value="Anthropology">Anthropology</option>
+                        <option value="Architecture">Architecture</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Biological Sciences">Biological Sciences</option>
+                        <option value="Biology">Biology</option>
+                        <option value="BSc Occupational Therapy">BSc Occupational Therapy</option>
+                        <option value="Building">Building</option>
+                        <option value="Business Studies">Business Studies</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Chemistry / Biochemistry">Chemistry / Biochemistry</option>
+                        <option value="Cinematic and Photography">Cinematic and Photography</option>
+                        <option value="Communication and Information Science">Communication and Information Science</option>
+                        <option value="Computer science">Computer science</option>
+                        <option value="Culinary Arts">Culinary Arts</option>
+                        <option value="Dentistry">Dentistry</option>
+                        <option value="Design Studies">Design Studies</option>
+                        <option value="Development studies">Development studies</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Economics">Economics</option>
+                        <option value="Education Studies">Education Studies</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="English Studies">English Studies</option>
+                        <option value="Fashion">Fashion</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Geography">Geography</option>
+                        <option value="Geography: Environmental Science">Geography: Environmental Science</option>
+                        <option value="Health Studies">Health Studies</option>
+                        <option value="History">History</option>
+                        <option value="HR management">HR management</option>
+                        <option value="Journalism">Journalism</option>
+                        <option value="Landscape Design">Landscape Design</option>
+                        <option value="Law">Law</option>
+                        <option value="Linguistics">Linguistics</option>
+                        <option value="Literary Studies">Literary Studies</option>
+                        <option value="Management studies">Management Studies</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Materials Science">Materials Science</option>
+                        <option value="Math">Math</option>
+                        <option value="MBA">MBA</option>
+                        <option value="Media Studies">Media Studies</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Modern Languages and European Studies">Modern Languages and European Studies</option>
+                        <option value="MSc Occupational Therapy (pre-reg)">MSc Occupational Therapy (pre-reg)</option>
+                        <option value="Music">Music</option>
+                        <option value="Not decided">Not decided</option>
+                        <option value="Not Set">Not Set</option>
+                        <option value="Nursing">Nursing</option>
+                        <option value="Nutrition">Nutrition</option>
+                        <option value="Pharmacology, Toxicology & Pharmacy">Pharmacology, Toxicology &amp; Pharmacy</option>
+                        <option value="Photography">Photography</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Physiotherapy">Physiotherapy</option>
+                        <option value="Planning (Urban, Rural & Regional)">Planning (Urban, Rural &amp; Regional)</option>
+                        <option value="Politics">Politics</option>
+                        <option value="Psychology">Psychology</option>
+                        <option value="Social Policy">Social Policy</option>
+                        <option value="Social Work">Social Work</option>
+                        <option value="Sociology">Sociology</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                        <option value="Sports science">Sports science</option>
+                        <option value="Tourism, Transport & Travel">Tourism, Transport &amp; Travel</option>
+                        <option value="Translation">Translation</option>
+                        <option value="Veterinary">Veterinary</option></select>
+                      <input type="hidden" id="desiredcoursename" name="desiredcoursename" value=""/>
+                    </div>
+                    <div class="col-12 pb-2">
+                      <select required aria-required="true" name="howyouheard" id="howyouheard" class="selectpicker form-control">
+                        <option selected="selected" value="">How did you hear about Study Ireland?*</option>
+                        <option value="google">Google</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="leaflet">Leaflet Posters</option>
+                        <option value="metro">Metro Station</option>
+                        <option value="newsletter">Newsletter</option>
+                        <option value="newspaperad">Newspaper Ad</option>
+                        <option value="online">Online Banner Ad</option>
+                        <option value="quora">Quora</option>
+                        <option value="roadside">Roadside Banners</option>
+                        <option value="school">School</option>
+                        <option value="sms">SMS</option>
+                        <option value="snapchat">Snapchat</option>
+                        <option value="university">University</option>
+                        <option value="website">Website</option>
+                        <option value="whatsapp">Whatsapp</option>
+                        <option value="british_council">British Council</option>
+                        <option value="college">College</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="friend">Friend</option>
+                      </select>
+                      <input type="hidden" id="howyouheardname" name="howyouheardname" value=""/>
+                    </div>
+                    <div class="col-12 pb-2 pt-2">
+                      <textarea name="txt_Notes" id="txt_Notes" rows="4" class="form-control offic-txtarea radius" placeholder="Please enter any further comments/questions here, e.g. Course type, Scholarships, Irish Universities, etc."></textarea>
+                    </div>
+                    <div class="col-1 text-right">
+                      <input type="checkbox" name="chkConsent" value="Checkbox" checked="checked" id="chkConsent" style="display: inline;" />
+                    </div>
+                    <div class="col-11">
+                      <span id="lblConsent">Keep me informed of scholarship news and special offers. By clicking submit you are agreeing to our terms and conditions and privacy policy</span>
+                    </div>
+                    <div class="col-12 pt-2 pb-2" style="text-align:-webkit-center;">
+                      <input type="submit" value="Submit" id="consultation" class="btn btn-lg ir-sub-btn"  />
+                    </div>
                   </div>
                   <div class="col-6 pb-2"><input type="text" name="familyname" value="" id="familyname" maxlength="64" size="32" class="form-control radius familyname" placeholder="Last Name*" required="required" pattern="[a-zA-Z\s\.\-_]+" oninvalid="this.setCustomValidity('Please enter your last name')" oninput="setCustomValidity('')"  />
                   </div>
@@ -231,6 +367,19 @@ crossorigin="anonymous"></script>
       });
   });
 </script>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5e26abafdaaca76c6fcf0e85/1dv3lue68';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>
