@@ -2,6 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, {{ metaTags }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Study Ireland</title>
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
 		<link rel="stylesheet" href="../style/style.css">
-		<link rel="stylesheet" href="../style/new-style.css" />
+		<link rel="stylesheet" href="{{ csspath }}style/new-style.css" />
 
 
     <!-- Font Awesome JS -->
@@ -94,7 +95,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='../contact-us/'>
+                        <a class="nav-link" href='{{path}}contact-us/'>
                             <i class="lni-book"></i>
                             Book a Free Consultation
 
@@ -114,7 +115,7 @@
     <div class="container" style="min-height: 100vh">
       <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{ path }}">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
                   <a href="../universities/">Universities</a>
               </li>
@@ -127,226 +128,7 @@
           </h3>
          
           <div class="row university-row">
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/athlone-institute-of-technology-(ait)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/athlone-institute-technology.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/cork-institute-of-technology-(cit)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/cork-institute-technology.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/dublin-business-school-(dbs)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/dublin-business-school.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/dublin-city-university-(dcu)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/dublin-city-university.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/dundalk-institute-of-technology-(dkit)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/dundalk-institute-technology.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/galway-mayo-institute-of-technology/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/galway-mayo-institute-technology.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/griffith-college-dublin-(gcd)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/griffith-college-dublin.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/institute-of-technology-carlow/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/institute-technology-carlow.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/institute-of-technology-sligo/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/institute-technology-sligo.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/institute-of-technology-tralee/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/institute-technology-tralee.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/letterkenny-institute-of-technology/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/letterkenny-institute-technology.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/limerick-institute-of-technology/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/limerick-institute-technology.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/maynooth-university-(mu)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/maynooth-university.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/national-college-of-ireland-(nci)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/national-college-ireland.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/national-university-of-ireland-galway-(nuig)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/nui-university.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/shannon-college-of-hotel-management/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/shannon-college-hotel-management.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/trinity-college-dublin-(tcd)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/trinity-college.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/techological-university-dublin/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/tu-dublin.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/university-college-dublin-(ucd)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/university-college-dublin.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/university-college-cork-(ucc)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/university-cork-college.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/university-of-limerick/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/university-of-limerick.png"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 university-row">
-              <div class="university-logo">
-                <a href="../universities/waterford-institute-of-technology-(wit)/" class="mx-auto d-block">
-                  <img
-                    class="img-fluid mx-auto d-block"
-                    src="../assets/images/universities/waterford-institute-technology.png"
-                  />
-                </a>
-              </div>
-            </div>
+          
         </div>
 
       </div>
@@ -380,7 +162,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script src="../js/master.js"></script>
+<script src="{{ path }}js/master.js"></script>
 
 
 <script type="text/javascript">
