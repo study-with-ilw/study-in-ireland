@@ -2,6 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, {{ metaTags }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Study Ireland</title>
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
 		<link rel="stylesheet" href="../../style/style.css">
-		<link rel="stylesheet" href="../../style/new-style.css" />
+		<link rel="stylesheet" href="{{ csspath }}style/new-style.css" />
 
 
     <!-- Font Awesome JS -->
@@ -40,7 +41,7 @@
                     <a href="/about-us">About Us</a>
                 </li>
         <li class="list-unstyled components">
-            <a href="../../universities/">University Profiles</a>
+            <a href="{{ universityProfilePath }}universities/">University Profiles</a>
         </li>
         <li class="list-unstyled components">
             <a href="../../courses/">University Courses</a>
@@ -71,7 +72,7 @@
             </button>
 
             <div class="ml-auto text-center">
-                <img src="../../assets/images/si-logo.png" style="height: 50px; width: 130px;" />
+                <img src="{{path}}assets/images/si-logo.png" style="height: 50px; width: 130px;" />
             </div>
 
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,7 +95,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='../../contact-us/'>
+                        <a class="nav-link" href='{{path}}contact-us/'>
                             <i class="lni-book"></i>
                             Book a Free Consultation
 
@@ -125,7 +126,7 @@
       <div class="university-landing-image">
           <img
           class="img-fluid" style="width: 100%; height: 450px;"
-          src="../../assets/images/blog/statement-of-purpose.jpg"
+          src="../../assets/images/blog/statement-of-purpose.png"
         />
       </div>
 
@@ -147,11 +148,10 @@
             >
           </p>
           <div class="inner-section-spacing">
-                <a href="#" class="badge badge-pill badge-primary">statment of purpose</a>
-                <a href="#" class="badge badge-pill badge-secondary">SOP</a>
+            <a href="#" class="badge badge-pill badge-primary">statment of purpose</a><a href="#" class="badge badge-pill badge-primary">SOP</a>
             </div>
           <div class="content-body">
-            <p>Your statement of purpose is an integral part of your application process to study abroad. Quite simply, before actually interviewing you, the school would like to know if you would actually make a great addition to their campus. So, it’s an interview that you will be giving, except via a written monologue, as it may be. </p>
+                        <p>Your statement of purpose is an integral part of your application process to study abroad. Quite simply, before actually interviewing you, the school would like to know if you would actually make a great addition to their campus. So, it’s an interview that you will be giving, except via a written monologue, as it may be. </p>
 				<h5>Writing the SOP</h5>
 				<ul>
 					<li>What are the specific academic and professional qualities you possess that could help you excel within this program?</li>
@@ -174,7 +174,7 @@
 				<p>This section will draw attention to the manner in which the statement of purpose needs to be shape up. Stick to the rules of grammar! If you are applying to British or European universities, remember that the ‘z’ is replaced by the ‘s’ and vice versa, for the American universities. Also, you could seek the help of a friend, family member, whose writing skills you admire. Keep the storyline free of clutter, avoid meandering from one anecdote to another, without flow. Also, do not deviate from the subject at hand, which is to elaborate on your suitability for admission by recounting that wild summer trip to Manali or any such incident, that may well, ruin your credibility. Humor may well be used for effect but not as a standalone measure of relief. </p>
 				<h5>A second opinion saves the day!</h5>
 				<p>After you have edited the flab, be sure to circulate your ready draft to your close family and elders, none of whom should be contenders for the same admit as you are. Statements of purposes are expected to be unique and two students with the same SOP will raise an alarm for the institute. Nonetheless, trust your immediate family and have them give constructive feedback on your written piece. Once you have the collective feedback, see if there are any common errors that have been pointed out and correct them. For the other errors, if they’re factual or grammatical, do change them. If they are only for effect, see if you could perhaps draft the sentence better, in your own way. Is that done? There, you are now set to send off your application with your own original statement of purpose. All the best!</p>
-				
+
           </div>
       </div>
     </div>
@@ -203,7 +203,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script src="../../js/master.js"></script>
+<script src="{{ path }}js/master.js"></script>
 
 
 <script type="text/javascript">
