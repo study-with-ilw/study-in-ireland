@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-		<link rel="stylesheet" href="../style/style.css">
+		<link rel="stylesheet" href="../../style/style.css">
 		<link rel="stylesheet" href="{{ csspath }}style/new-style.css" />
 
 
@@ -41,19 +41,19 @@
                     <a href="/about-us">About Us</a>
                 </li>
         <li class="list-unstyled components">
-            <a href="../universities/">University Profiles</a>
+            <a href="{{ universityProfilePath }}universities/">University Profiles</a>
         </li>
         <li class="list-unstyled components">
-            <a href="../courses/">University Courses</a>
+            <a href="../../courses/">University Courses</a>
         </li>
         <li class="list-unstyled components">
-            <a href="../blog/">Blog</a>
+            <a href="../../blog/">Blog</a>
         </li>
         <li>
             <a href="#newsEventsMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">News and Events</a>
             <ul class="collapse list-unstyled" id="newsEventsMenu">
-                <li><a href="../news/">News</a></li>
-                <li><a href="../events/">Events</a></li>
+                <li><a href="../../news/">News</a></li>
+                <li><a href="../../events/">Events</a></li>
             
             </ul>
         </li>
@@ -72,7 +72,7 @@
             </button>
 
             <div class="ml-auto text-center">
-                <img src="../assets/images/si-logo.png" style="height: 50px; width: 130px;" />
+                <img src="{{path}}assets/images/si-logo.png" style="height: 50px; width: 130px;" />
             </div>
 
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,44 +111,52 @@
 
 
 
-	<div class="container">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="../blog/">Blog</a></li>
-        </ol>
-    </nav>
+	    <!-- scholarship blog -->
+    <div class="container">
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../../">Home</a></li>
+              <li class="breadcrumb-item"><a href="../../blog/">Blog</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="../../blog/admissions-during-covid">Admissions during covid</a>
+              </li>
+          </ol>
+      </nav>
 
-    <section>
-      <div class="container new-section">
-        <h3 class="margin-20">List</h3>
-
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-      <div class="card-header" id="card0">
-        <h2 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapseOne">
-            <h5>Admissions during covid</h5>
-          </button>
-        </h2>
+      <div class="university-landing-image">
+          <img
+          class="img-fluid" style="width: 100%; height: 450px;"
+          src="../../assets/images/blog/admissions-during-covid.png"
+        />
       </div>
 
-      <div id="collapse0" class="collapse" aria-labelledby="card0" data-parent="#accordionExample">
-        <div class="card-body">
-            <p>17th May 2020</p>
-            <p>How tough it is during covid to secure abroad admissions&nbsp;
-            </p>
-            <div class="b-more">
-              <a href="./admissions-during-covid/index.html">Read more</a>
+      <div class="new-section">
+          <h3>Admissions during covid</h3>
+          <p>
+            <span class="meta-section"
+              ><span class="mr-2">Posted</span
+              ><span class="tutorial-date">
+                <script language="javascript" type="text/javascript">
+                  const date = new Date();
+                  const dd = String(date.getDate()).padStart(2, '0');
+                  const month = date.toLocaleString('default', { month: 'long' });
+                  const yyyy = date.getFullYear();
+    
+                  document.write(dd + ' ' + month + ', ' + yyyy);
+                </script>
+              </span></span
+            >
+          </p>
+          <div class="inner-section-spacing">
+            <a href="#" class="badge badge-pill badge-primary">covid-19</a>
             </div>
-        </div>
+          <div class="content-body">
+            <p>How tough it is during covid to secure abroad admissions&nbsp;</p>
+          </div>
       </div>
     </div>
-        </div>
-      </div>
-    </section>
-    
-  </div>
+
+
 	
 	<!-- Footer -->
 <div class="container">
