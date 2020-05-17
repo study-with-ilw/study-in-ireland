@@ -2,6 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, {{ metaTags }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Study Ireland</title>
@@ -51,7 +52,7 @@
         <li>
             <a href="#newsEventsMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">News and Events</a>
             <ul class="collapse list-unstyled" id="newsEventsMenu">
-                <li><a href="../../news/">News</a></li>
+                <li><a href="{{ newsPath }}news/">News</a></li>
                 <li><a href="../../events/">Events</a></li>
             
             </ul>
@@ -71,7 +72,7 @@
             </button>
 
             <div class="ml-auto text-center">
-                <img src="../../assets/images/si-logo.png" style="height: 50px; width: 130px;" />
+                <img src="{{path}}assets/images/si-logo.png" style="height: 50px; width: 130px;" />
             </div>
 
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,7 +95,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='../../contact-us/'>
+                        <a class="nav-link" href='{{path}}contact-us/'>
                             <i class="lni-book"></i>
                             Book a Free Consultation
 
@@ -110,33 +111,24 @@
 
 
 
-	
-    <!-- Events Details Page-->
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../../">Home</a></li>
-                <li class="breadcrumb-item"><a href="../../events/">Events</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  <a href="../../events/dummy-event">Dummy Event</a>
-                </li>
-            </ol>
-        </nav>
-
-      <div class="new-section">
-          <h3>Dummy Event</h3>
-    
-          <p><b>10 October 2019<br>15:00 - 17:00<br>SI-Ireland Office</b></p>
-				<p>            </p>
-				<p>        </p>
-				<p>Dublin City University is a globally recognised university committed to excellence and the development of talent through its fundamentals of academic and operational excellence. DCU’s strategic objective is to gain recognition as an International University of Enterprise and to equip students with the requisite skills and knowledge to meet the challenges of the 21st century.</p>
-				<p>          </p>
-				<p>Last Updated: 19 September 2019</p>
-				
-      </div>
-      
-    
+	    <div class="container">
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../../">Home</a></li>
+              <li class="breadcrumb-item"><a href="../../news/">Event</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="../../events/post-covid-meetup">post covid meetup</a>
+              </li>
+          </ol>
+      </nav>
+  
+    <div class="new-section">
+        <h3 class="pb-3">post covid meetup</h3>
+        <p>new colleges coming for meetup</p>
     </div>
+   
+  
+  </div>
 	
 	<!-- Footer -->
 <div class="container">
