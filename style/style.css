@@ -16,6 +16,15 @@ p {
     color: #000;
 }
 
+blockquote {
+    border-left: 5px solid #ccc;
+    font-style: italic;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 a,
 a:hover,
 a:focus {
