@@ -112,146 +112,310 @@
 
 
 	<div class="main-container" id="page">
-  <div style="height: 100%; width: 100%; position: absolute; z-index: 1; opacity: 0.2; filter: brightness(50%);">
-    <image class="img-fluid" src="../../assets/images/landing-page/test-landing-page2.png" />
-  </div>
-  <section
-    id="hero11"
-    class="bg-img hero-leadbox content-align-md"
-    style="position: relative; z-index: 2;"
+  <div
+    style="
+      height: 100%;
+      width: 95%;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.5;
+      filter: brightness(50%);
+    "
   >
-    <div class="overlay"></div>
-
+    <image
+      class="img-fluid"
+      src="../../assets/images/landing-page/test-landing-page2.png"
+    />
+  </div>
+  <section id="" class="" style="position: relative; z-index: 2;">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 y-middle c2">
+        <div class="col-lg-12">
           <!-- Intro Text -->
-          <div class="col-md-6 center-md text-white">
+          <div class="col-lg-6 text-center">
             <p>Some awesome text in landing page...</p>
           </div>
           <!-- Booking Form -->
-          <div class="col-md-6">
+          <div class="col-lg-6">
+            <h3>Free Expert Admission and Scholarship Guidance</h3>
             <form
-              class="form-horizontal form-white form-2col text-white"
-              id="dateForm"
-              name="FORM 0"
-              method="Post"
-              enctype="multipart/form-data"
               action="https://usebasin.com/f/130f45dddafa"
+              method="POST"
+              target="0"
             >
-              <h4 class="text-center">Register Now For Free Counselling</h4>
-              <p class="text-center m-b-md"></p>
-              <div class="form-group w-51">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="FirstName"
-                  value=""
-                  id="dfName"
-                  placeholder="Name"
-                  required=""
-                />
-              </div>
-              <div class="form-group w-50">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="dfEmail"
-                  value=""
-                  placeholder="Email"
-                  name="EmailAddress"
-                  required=""
-                />
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="dfPhone"
-                  value=""
-                  placeholder="Phone Number"
-                  name="Phone"
-                  required=""
-                />
-              </div>
-
-              <div class="form-group w-51">
-                <select
-                  id="dfphone"
-                  name="mx_Choose_Ireland_Event"
-                  class="form-control"
-                  required=""
+              <div class="row">
+                <div class="col-6 pb-2">
+                  <input
+                    type="text"
+                    name="firstname"
+                    value=""
+                    id="firstname"
+                    maxlength="64"
+                    size="32"
+                    class="form-control radius firstname"
+                    placeholder="First Name*"
+                    required="required"
+                    pattern="[a-zA-Z\s\.\-_]+"
+                    oninvalid="this.setCustomValidity('Please enter your first name')"
+                    oninput="setCustomValidity('')"
+                  />
+                </div>
+                <div class="col-6 pb-2">
+                  <input
+                    type="text"
+                    name="familyname"
+                    value=""
+                    id="familyname"
+                    maxlength="64"
+                    size="32"
+                    class="form-control radius familyname"
+                    placeholder="Last Name*"
+                    required="required"
+                    pattern="[a-zA-Z\s\.\-_]+"
+                    oninvalid="this.setCustomValidity('Please enter your last name')"
+                    oninput="setCustomValidity('')"
+                  />
+                </div>
+                <div class="col-6 pb-2">
+                  <input
+                    type="text"
+                    name="phone"
+                    value=""
+                    id="phone"
+                    maxlength="20"
+                    size="20"
+                    class="form-control"
+                    placeholder="Phone Number*"
+                    required="required"
+                    oninvalid="this.setCustomValidity('Please enter your phone number')"
+                    oninput="setCustomValidity('')"
+                    onkeyup="phonevalidate()"
+                  />
+                  <span
+                    style="padding: 0px;"
+                    class="phoneerror text-danger"
+                    id="phoneerror"
+                  ></span
+                  ><input
+                    type="hidden"
+                    id="updatephone"
+                    name="updatephone"
+                    value=""
+                  /><input
+                    type="hidden"
+                    id="phonecode"
+                    name="phonecode"
+                    value=""
+                  />
+                </div>
+                <div class="col-6 pb-2">
+                  <input
+                    type="email"
+                    name="email"
+                    value=""
+                    id="email"
+                    maxlength="64"
+                    size="32"
+                    class="form-control radius btm_10"
+                    placeholder="Email*"
+                    required="required"
+                    oninvalid="this.setCustomValidity('Please enter your email')"
+                    oninput="setCustomValidity('')"
+                  />
+                </div>
+                <div class="col-12 pb-2">
+                  <input
+                    type="text"
+                    name="city"
+                    value=""
+                    id="city"
+                    maxlength="64"
+                    size="32"
+                    class="form-control radius btm_10"
+                    placeholder="City*"
+                    required="required"
+                    oninvalid="this.setCustomValidity('Please enter your city')"
+                    oninput="setCustomValidity('')"
+                  />
+                </div>
+                <div class="col-6 pb-2">
+                  <select
+                    required
+                    aria-required="true"
+                    name="studytype"
+                    id="studytype"
+                    class="selectpicker form-control"
+                  >
+                    <option value="">Course Level*</option>
+                    <option value="bachelors">UG (After 12th)</option>
+                    <option value="masters">Masters</option>
+                    <option value="mba">MBA</option>
+                    <option value="research">Research</option>
+                  </select>
+                  <input
+                    type="hidden"
+                    id="studytypename"
+                    name="studytypename"
+                    value=""
+                  />
+                </div>
+                <div class="col-6 pb-2">
+                  <!-- <select required aria-required="true" name="desiredcourse" id="desiredcourse" class="selectpicker form-control"> -->
+                  <!-- <option value="">Which Subject are you interested in?*</option></select> -->
+                  <select
+                    required=""
+                    aria-required="true"
+                    name="desiredcourse"
+                    id="desiredcourse"
+                    class="selectpicker form-control"
+                  >
+                    <option value="">Course Interest*</option>
+                    <option value="Not decided">Not decided</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Animal Science">Animal Science</option>
+                    <option value="Anthropology">Anthropology</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Artificial Intelligence"
+                      >Artificial Intelligence</option
+                    >
+                    <option value="Arts">Arts</option>
+                    <option value="Biological Sciences"
+                      >Biological Sciences</option
+                    >
+                    <option value="Biology">Biology</option>
+                    <option value="BSc Occupational Therapy"
+                      >BSc Occupational Therapy</option
+                    >
+                    <option value="Building">Building</option>
+                    <option value="Business Analytics"
+                      >Business Analytics</option
+                    >
+                    <option value="Business Studies">Business Studies</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Chemistry / Biochemistry"
+                      >Chemistry / Biochemistry</option
+                    >
+                    <option value="Cinematic and Photography"
+                      >Cinematic and Photography</option
+                    >
+                    <option value="Communication and Information Science"
+                      >Communication and Information Science
+                    </option>
+                    <option value="Computer science">Computer science</option>
+                    <option value="Culinary Arts">Culinary Arts</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Dentistry">Dentistry</option>
+                    <option value="Design Studies">Design Studies</option>
+                    <option value="Development studies"
+                      >Development studies</option
+                    >
+                    <option value="Drama">Drama</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Education Studies">Education Studies</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="English Studies">English Studies</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Geography">Geography</option>
+                    <option value="Geography: Environmental Science"
+                      >Geography: Environmental Science</option
+                    >
+                    <option value="Health Studies">Health Studies</option>
+                    <option value="History">History</option>
+                    <option value="HR management">HR management</option>
+                    <option value="Journalism">Journalism</option>
+                    <option value="Landscape Design">Landscape Design</option>
+                    <option value="Law">Law</option>
+                    <option value="Linguistics">Linguistics</option>
+                    <option value="Literary Studies">Literary Studies</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Management studies"
+                      >Management Studies</option
+                    >
+                    <option value="Marketing">Marketing</option>
+                    <option value="Materials Science">Materials Science</option>
+                    <option value="Math">Math</option>
+                    <option value="MBA">MBA</option>
+                    <option value="Media Studies">Media Studies</option>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Modern Languages and European Studies"
+                      >Modern Languages and European Studies
+                    </option>
+                    <option value="MSc Occupational Therapy (pre-reg)"
+                      >MSc Occupational Therapy (pre-reg)</option
+                    >
+                    <option value="Music">Music</option>
+                    <option value="Nursing">Nursing</option>
+                    <option value="Nutrition">Nutrition</option>
+                    <option value="Pharmacology, Toxicology & Pharmacy"
+                      >Pharmacology, Toxicology &amp; Pharmacy
+                    </option>
+                    <option value="Photography">Photography</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Physiotherapy">Physiotherapy</option>
+                    <option value="Planning (Urban, Rural & Regional)"
+                      >Planning (Urban, Rural &amp; Regional)
+                    </option>
+                    <option value="Politics">Politics</option>
+                    <option value="Psychology">Psychology</option>
+                    <option value="Social Policy">Social Policy</option>
+                    <option value="Social Work">Social Work</option>
+                    <option value="Sociology">Sociology</option>
+                    <option value="Software Engineering"
+                      >Software Engineering</option
+                    >
+                    <option value="Sports science">Sports science</option>
+                    <option value="Tourism, Transport & Travel"
+                      >Tourism, Transport &amp; Travel</option
+                    >
+                    <option value="Translation">Translation</option>
+                    <option value="Veterinary">Veterinary</option>
+                  </select>
+                  <input
+                    type="hidden"
+                    id="desiredcoursename"
+                    name="desiredcoursename"
+                    value=""
+                  />
+                </div>
+                <div class="col-12 pb-2 pt-2">
+                  <textarea
+                    name="txt_Notes"
+                    id="txt_Notes"
+                    rows="4"
+                    class="form-control offic-txtarea radius"
+                    placeholder="Please enter any further comments/questions here, e.g. Course type, Scholarships, Irish Universities, etc."
+                  ></textarea>
+                </div>
+                <div class="col-1 text-right">
+                  <input
+                    type="checkbox"
+                    name="chkConsent"
+                    value="Checkbox"
+                    checked="checked"
+                    id="chkConsent"
+                    style="display: inline;"
+                  />
+                </div>
+                <div class="col-11">
+                  <span id="lblConsent"
+                    >Keep me informed of scholarship news and special offers. By
+                    clicking submit you are agreeing to our terms and conditions
+                    and privacy policy</span
+                  >
+                </div>
+                <div
+                  class="col-12 pt-2 pb-2"
+                  style="text-align: -webkit-center;"
                 >
-                  <option value="">Choose Ireland Event </option
-                  ><option value="Delhi">Delhi </option
-                  ><option value="Pune">Pune </option
-                  ><option value="Mumbai">Mumbai </option
-                  ><option value="Chennai">Chennai </option
-                  ><option value="Bangalore">Bangalore </option></select
-                >
-              </div>
-
-              <div class="form-group w-51">
-                <select
-                  id="dfphone"
-                  name="mx_Looking_to_Join"
-                  class="form-control"
-                  required=""
-                >
-                  <option value="">Looking for which intake </option
-                  ><option value="Sep 2020">Sep 2020 </option
-                  ><option value="Jan 2021">Jan 2021 </option
-                  ><option value="Sep 2021">Sep 2021 </option
-                  ><option value="Later">Later </option></select
-                >
-              </div>
-
-              <div class="form-group w-51">
-                <select
-                  id="dfphone"
-                  name="mx_Preferred_Time_to_Call"
-                  class="form-control"
-                  required=""
-                >
-                  <option value="">Preferred Time to Call </option
-                  ><option value="10:00 am to 12 noon"
-                    >10:00 am to 12 noon </option
-                  ><option value="12:01 pm to 4:00 pm"
-                    >12:01 pm to 4:00 pm </option
-                  ><option value="4:01 pm to 7:00 pm "
-                    >4:01 pm to 7:00 pm
-                  </option></select
-                >
-              </div>
-              <div class="form-group w-51">
-                <select
-                  id="dfphone"
-                  name="mx_Financial_Preparedness"
-                  class="form-control"
-                  required=""
-                >
-                  <option value="">Financial Preparedness </option
-                  ><option value="Own funds ">Own funds </option
-                  ><option value="Own funds and Loan/Scholarship "
-                    >Own funds and Loan/Scholarship </option
-                  ><option value="Loan and Scholarship/grants "
-                    >Loan and Scholarship/grants </option
-                  ><option value="Other"> Other </option></select
-                >
-              </div>
-
-              <div class="form-group">
-                <textarea
-                  id="dfMessage"
-                  rows="2"
-                  class="form-control"
-                  placeholder="Comments"
-                  name="Notes"
-                  required=""
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-shadow btn-blue-hero">
-                  REGISTER NOW
-                </button>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    id="consultation"
+                    class="btn btn-lg ir-sub-btn"
+                  />
+                </div>
               </div>
             </form>
           </div>
@@ -261,7 +425,76 @@
       </div>
       <!-- /End Row -->
     </div>
-  
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Why Ireland</h3>
+        </div>
+      </div>
+      <div class="row landingPageHighlights">
+        <div class="col-lg-4">
+          <h5>World Class Universities</h5>
+          <p>Many Irish Universities <b>rank in the TOP 1%</b> in the World</p>
+        </div>
+        <div class="col-lg-4">
+          <h5>Work Permit after Masters</h5>
+          <p><b>2 years Post-study Work</b> available after studies</p>
+        </div>
+        <div class="col-lg-4">
+          <h5>Part-time Work</h5>
+          <p>Work while you study to earn <b>part time income</b> during course (<b>work full time</b> during vacations)</p>
+            Work while you study to earn part time income during course (work
+            full time during vacations)
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h5>Scholarships</h5>
+          <p>Many scholarships upto <b>50% to 100%</b> offered on merit-basis</p>
+        </div>
+        <div class="col-lg-4">
+          <h5>Green Card</h5>
+          <p>
+            Easy conversion of Post-study Work visa into <b>Green Card</b> or <b>Work Permit</b>
+            Easy conversion of Post-study Work visa into Green Card or Work
+            Permit
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h5>Entry to EU Nations for Work</h5>
+          <p>
+            Ireland allows access to work in <b>28 EU nations</b> including Germany, Italy, France, etc
+            Italy, France, etc.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h5>Duration of Masters / MBA and Cost of Studies</h5>
+          <p>
+            Only <b>1 Year</b> - save time and money! Cost of full Masters / MBA is <b>much less (or half)</b> as compared to other top study destinations
+            much less (or half) as compared to other top study destinations
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h5>English-speaking Country</h5>
+          <p>
+            Ireland is a <b>100% English</b> speaking nation - this helps in gaining employment
+            employment!
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h5>Home to Best Companies</h5>
+          <p>
+            Top companies including many EU Headquarters of the best giants in the world are in Ireland eg. Apple, Google, Facebook, Amazon, Twitter, Infosys, TCS, J&J, Abbott, Biogen, Pfizer, 100s more
+            the world are in Ireland eg. Apple, Google, Facebook, Amazon,
+            Twitter, Infosys, TCS, J&J, Abbott, Biogen, Pfizer, 100s more
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 
